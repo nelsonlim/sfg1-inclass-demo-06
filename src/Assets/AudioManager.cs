@@ -35,16 +35,15 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         PlayBGMusic();
-        currentLevel = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayNextLevelBGMusic();
+        PlayBGMusic();
     }
 
-    private void PlayNextLevelBGMusic()
+    private void PlayBGMusic()
     {
         if (currentLevel != SceneManager.GetActiveScene().name)
         {
@@ -55,19 +54,9 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void PlayBGMusic()
-    {
-        audioSrc.clip = GetCurrentBGClip();
-        if (audioSrc.isPlaying)
-        {
-            audioSrc.Stop();
-        }
-        audioSrc.Play();
-    }
-
     private AudioClip GetCurrentBGClip()
     {
-        String activeScene = SceneManager.GetActiveScene().name;
+        string activeScene = SceneManager.GetActiveScene().name;
         if (activeScene == "MainMenu")
         {
             return bgMainMenuClip;

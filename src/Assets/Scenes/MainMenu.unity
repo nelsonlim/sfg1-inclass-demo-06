@@ -684,5 +684,15 @@ PrefabInstance:
       propertyPath: bgGameMusic
       value: 
       objectReference: {fileID: 8300000, guid: d75e25f9dc34ff54f9785e935dd74a23, type: 3}
+    - target: {fileID: 8365441044099965349, guid: b32a9f3e2e9235045877fdabd272be2f,
+        type: 3}
+      propertyPath: bgMainMenuClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 207236b87f5b0da49bb01858691a4c21, type: 3}
+    - target: {fileID: 8365441044099965349, guid: b32a9f3e2e9235045877fdabd272be2f,
+        type: 3}
+      propertyPath: bgGameClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d75e25f9dc34ff54f9785e935dd74a23, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b32a9f3e2e9235045877fdabd272be2f, type: 3}
